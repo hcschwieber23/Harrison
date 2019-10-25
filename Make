@@ -1,0 +1,215 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class IDK : MonoBehaviour
+{
+    public float yspeed = 10;
+    public int xspeed = 10;
+    public int zspeed = 10;
+    public int scaley;
+    public int moveX = 1;
+    int movedis = 2;
+    // Start is called before the first frame update
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        transform.Rotate(xspeed, yspeed, zspeed);
+        transform.localScale += new Vector3(scaley, scaley, scaley);
+        if (moveX == -5)
+        {
+            scaley = 0;
+        }
+        if (moveX == 0)
+        {
+            scaley = 1;
+        }
+        if (moveX == 5)
+        {
+            scaley = 0;
+        }
+        if (moveX == 10)
+        {
+            scaley = 1;
+        }
+        if (moveX == 16)
+        {
+            scaley = 0;
+        }
+        DoMoreMath();
+
+
+        if (moveX == -5)
+        {
+            transform.Translate(Vector3.right * movedis);
+        }
+        if (moveX == 5)
+        {
+            transform.Translate(Vector3.left * movedis);
+        }
+        if (moveX == -4)
+        {
+            transform.Translate(Vector3.right * movedis);
+        }
+        if (moveX == 4)
+        {
+            transform.Translate(Vector3.left * movedis);
+        }
+        if (moveX == -3)
+        {
+            transform.Translate(Vector3.right * movedis);
+        }
+        if (moveX == 3)
+        {
+            transform.Translate(Vector3.left * movedis);
+        }
+        if (moveX == -2)
+        {
+            transform.Translate(Vector3.right * movedis);
+        }
+        if (moveX == 2)
+        {
+            transform.Translate(Vector3.left * movedis);
+        }
+        if (moveX == -1)
+        {
+            transform.Translate(Vector3.right * movedis);
+        }
+        if (moveX == 1)
+        {
+            transform.Translate(Vector3.left * movedis);
+        }
+        if (moveX == 6)
+        {
+            transform.Translate(Vector3.right * movedis);
+        }
+        if (moveX == 7)
+        {
+            transform.Translate(Vector3.right * movedis);
+        }
+        if (moveX == 8)
+        {
+            transform.Translate(Vector3.right * movedis);
+        }
+        if (moveX == 9)
+        {
+            transform.Translate(Vector3.right * movedis);
+        }
+        if (moveX == 10)
+        {
+            transform.Translate(Vector3.right * movedis);
+        }
+        if (moveX == 11)
+        {
+            transform.Translate(Vector3.right * movedis);
+        }
+        if (moveX == 12)
+        {
+            transform.Translate(Vector3.right * movedis);
+        }
+        if (moveX == 13)
+        {
+            transform.Translate(Vector3.right * movedis);
+
+        }
+        if (moveX == 14)
+        {
+            transform.Translate(Vector3.right * movedis);
+        }
+        if (moveX == 15)
+        {
+            transform.Translate(Vector3.right * 0);
+        }
+
+    }
+    void DoMoreMath()
+    {
+        if (moveX == 5)
+        {
+            moveX += 1;
+
+        }
+        if (moveX == -5)
+        {
+            moveX = 5;
+        }
+        if (moveX == -4)
+        {
+            moveX -= 1;
+        }
+        if (moveX == 4)
+        {
+            moveX += 1;
+        }
+        if (moveX == -3)
+        {
+            moveX -= 1;
+        }
+        if (moveX == 3)
+        {
+            moveX += 1;
+        }
+        if (moveX == -2)
+        {
+            moveX -= 1;
+        }
+        if (moveX == 2)
+        {
+            moveX += 1;
+        }
+        if (moveX == -1)
+        {
+            moveX -= 1;
+        }
+        if (moveX == 1)
+        {
+            moveX += 1;
+        }
+        if (moveX == 0)
+        {
+            moveX -= 1;
+            Debug.Log("big");
+        }
+        if (moveX == 6)
+        {
+            moveX += 1;
+        }
+        if (moveX == 7)
+        {
+            moveX += 1;
+        }
+        if (moveX == 9)
+        {
+            moveX += 1;
+        }
+        if (moveX == 10)
+        {
+            moveX += 1;
+        }
+        if (moveX == 11)
+        {
+            moveX += 1;
+        }
+        if (moveX == 12)
+        {
+            moveX += 1;
+        }
+        if (moveX == 13)
+        {
+            moveX += 1;
+        }
+        if (moveX == 14)
+        {
+            moveX += 1;
+        }
+        if (moveX == 8)
+        {
+            moveX += 1;
+        }
+    }
+}
